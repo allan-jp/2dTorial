@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://cixjrwdsfkgk8"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_223t2"]
-[ext_resource type="Texture2D" uid="uid://dkquwgxaon8eq" path="res://icon.svg" id="1_krb7s"]
-[ext_resource type="Script" path="res://scenes/logo.gd" id="3_kdado"]
 [ext_resource type="PackedScene" uid="uid://d2ajmui7sj2b" path="res://player/player.tscn" id="3_yq8uy"]
+[ext_resource type="PackedScene" uid="uid://c62j7b275m38u" path="res://objects/turlet.tscn" id="4_k5ewh"]
+[ext_resource type="PackedScene" uid="uid://cxvkhfllj1op6" path="res://objects/bed.tscn" id="5_0svbe"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_223t2")
 
-[node name="Logo" type="Sprite2D" parent="."]
-position = Vector2(-7, -3)
-texture = ExtResource("1_krb7s")
-region_rect = Rect2(-166, -111, 230, 175)
-script = ExtResource("3_kdado")
+[node name="Bed" parent="." instance=ExtResource("5_0svbe")]
+position = Vector2(831, 193)
+
+[node name="Turlet" parent="." instance=ExtResource("4_k5ewh")]
+position = Vector2(104, 114)
 
 [node name="Player" parent="." instance=ExtResource("3_yq8uy")]
-position = Vector2(212, 493)
-rotation = 4.71239
+position = Vector2(47, 597)
+rotation = -1.5708
