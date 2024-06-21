@@ -31,3 +31,11 @@ script = ExtResource("2_qdb2x")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, 28)
 shape = SubResource("RectangleShape2D_r3trw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 117.0
+offset_top = -52.0
+offset_right = 223.0
+offset_bottom = -26.0
+text = "\"T\" To Flush"

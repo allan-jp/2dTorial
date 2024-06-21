@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+func _ready():
+	pass
+	
 func _process(delta):
 	# movement input
 	var direction = Input.get_vector("left", "right", "up", "down")
